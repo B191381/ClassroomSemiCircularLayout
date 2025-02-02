@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classroom Semi-Circular Layout</title>
+  <link rel="stylesheet" href="classroomlayout.css">
+</head>
+<body>
+  <div class="input-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Row</th>
+          <th>B1</th>
+          <th>B2</th>
+        </tr>
+      </thead>
+      <tbody id="rows-container">
+        <tr>
+          <td>R1</td>
+          <td><input type="number" value="6" class="seats-input" data-block="1" data-row="1" min="0" max="6"></td>
+          <td><input type="number" value="6" class="seats-input" data-block="2" data-row="1"></td>
+        </tr>
+        <tr>
+          <td>R2</td>
+          <td><input type="number" value="8" class="seats-input" data-block="1" data-row="2"></td>
+          <td><input type="number" value="8" class="seats-input" data-block="2" data-row="2"></td>
+        </tr>
+        <tr>
+          <td>R3</td>
+          <td><input type="number" value="10" class="seats-input" data-block="1" data-row="3"></td>
+          <td><input type="number" value="10" class="seats-input" data-block="2" data-row="3"></td>
+        </tr>
+        <tr>
+          <td>R4</td>
+          <td><input type="number" value="12" class="seats-input" data-block="1" data-row="4"></td>
+          <td><input type="number" value="12" class="seats-input" data-block="2" data-row="4"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="generate-layout">Generate Layout</button>
+  </div>
+
+  <div class="layout-container" id="layout-container"></div>
+
+  <script src="classroomlayout.js"></script>
+</body>
+</html>
