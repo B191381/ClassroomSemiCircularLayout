@@ -30,8 +30,8 @@ document.getElementById("generate-layout").addEventListener("click", () => {
   
         // Position the seat
         seat.style.position = "absolute";
-        seat.style.left = `${x}px`; // Center horizontally (assuming seat width = 40px)
-        seat.style.top = `${y}px`; // Center vertically (assuming seat height = 40px)
+        seat.style.left = `${x}px`; // Center horizontally
+        seat.style.top = `${y}px`; // Center vertically 
         seat.style.transform = `rotate(${(angle - Math.PI / 2) * (-180 / Math.PI)}deg)`;
         layoutContainer.appendChild(seat);
       }
@@ -49,9 +49,8 @@ document.getElementById("generate-layout").addEventListener("click", () => {
   
         // Position the seat
         seat.style.position = "absolute";
-        seat.style.left = `${x}px`; // Center horizontally (assuming seat width = 40px)
-        seat.style.top = `${y}px`; // Center vertically (assuming seat height = 40px)
-        //seat.style.transform = `rotate(${angle * (20 / Math.PI)}deg)`;
+        seat.style.left = `${x}px`; // Center horizontally 
+        seat.style.top = `${y}px`; // Center vertically 
         seat.style.transform = `rotate(${(angle - Math.PI / 2) * (-180 / Math.PI)}deg)`;
         layoutContainer.appendChild(seat);
       }
